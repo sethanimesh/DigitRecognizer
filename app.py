@@ -11,7 +11,7 @@ from collections import Counter
 import seaborn as sns
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 model = tf.keras.models.load_model("my_model.h5")
 
